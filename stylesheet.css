@@ -1,0 +1,1381 @@
+*{
+	margin: 0px;
+	border: 0px;
+	font-family: verdana;
+}
+
+
+#main{
+	width: 100%;
+	background-color: white;
+	background-size: cover;
+}
+
+/*/////////////////////////////////////////////////////// Navigation Bar /////////////////////////////////////////////////////////////////*/
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #00a087;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: right;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  padding: 22px 20px;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+
+/* The dropdown container */
+.dropdown {
+  float: right;
+  overflow: hidden;
+  display: block;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 15px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  padding: 22px 20px;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+/* Add a orange background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: orange;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 15px;
+  padding: 13px;
+  margin: 0px;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  text-align: center;
+}
+
+
+.NavTitle{
+  font-size:17px;
+  color: white;
+  float: left;
+  margin-top: 25px;
+  margin-left:4px;
+}
+.NavLogo{
+  float: left;
+  margin-top: 10px;
+}
+
+/*///////////////////////////////////////////////////////////Breadcrumb links//////////////////////////////////////////////////////////////*/
+
+ul.breadcrumb {
+overflow: hidden;
+ padding: 3px;
+ list-style: none;
+ font-size: 15px;
+ font-family: 'Anonymous Pro', monospace;
+ background-color: #008080;
+ color:white;
+ margin: 0px;
+ line-height: 10px;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 10px;
+}
+ul.breadcrumb li a {
+  color: white;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.rightarrow {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.breadCrumbBG{
+	background-color: #00a087;
+	color:white;
+	padding: 1px;
+	font-family:arial;
+	border-style: solid;
+	border-top-width: 1px;
+	z-index:2;
+}
+
+/*///////////////////////////////////////////////////////////background colours////////////////////////////////////////////////////////////*/
+
+.lightBG{
+	overflow: hidden;
+	background-color: #00a087;
+	padding: 20px;
+	color:white;
+	font-family:arial;
+	border-style: solid;
+    border-width: 3px;
+}
+
+.darkBG{
+	overflow: hidden;
+	background-color: #008080;
+	padding: 20px;
+	color:white;
+	font-family:arial;
+	border-style: solid;
+    border-width: 3px;
+}
+
+.Title
+{
+	text-align: center;
+	font-size:40px;
+	font-weight:bold;
+	margin: 20px;
+}
+
+.Title2
+{
+	text-align: center;
+	font-size:25px;
+	font-weight:bold;
+	margin: 20px;
+}
+
+.SmallHorizontalBorder{
+	vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 500px;
+	margin: 10px;
+	height: 3px;
+	background: white;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.BorderBottom
+{
+	border-style: solid;
+    border-bottom-width: 2px;
+	margin: 30px;
+}
+
+.BorderTop
+{
+	border-style: solid;
+    border-top-width: 3px;
+	border-color: white;
+}
+
+.BorderNoMargin{
+	border-style: solid;
+    border-width: 3px;
+	border-color: white;
+}
+
+.TextAlignCenter
+{
+	overflow: hidden;
+	text-align: center;
+	color:white;
+}
+
+#more {display: none;}
+
+.MarginLeft{
+	margin-left: 450px;
+}
+
+/*////////////////////////////////////////////////////////////Header/Typewriter/////////////////////////////////////////////////////////////*/
+.example1 {
+ height: 15px;  
+ overflow: hidden;
+ position: relative;
+}
+.example1 h3 {
+ font-size: 15px;
+ font-family: 'Anonymous Pro', monospace;
+ background-color: white;
+ color:black;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 10px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);    
+ transform:translateX(100%);
+ /* Apply animation to this element */  
+ -moz-animation: example1 15s linear infinite;
+ -webkit-animation: example1 5s linear infinite;
+ animation: example1 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes example1 {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes example1 {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes example1 {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%);       
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%); 
+ }
+}
+
+.header {
+  padding: 100px;
+  text-align: center;
+  background: #1abc9c;
+  font-size: 50px;
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;  
+  background-color: rgb(25,25,25); 
+}
+
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid transparent;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation: typing 5s steps(18), blink-caret 5s;
+}
+
+.typewriter h2 {
+  color: #fff;
+  font-family: monospace;
+  font-size: 40px;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid transparent;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .2em;
+  /* Adjust as needed */
+  animation: typing 10s steps(45), blink-caret2 2s;
+  animation-delay: 0s;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+  to {
+    width: 100%
+  }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent
+  }
+  50% {
+    border-color: white
+  }
+}
+
+@keyframes blink-caret2 {
+  from,
+  to {
+    border-color: transparent
+  }
+  50% {
+    border-color: white
+  }
+}
+
+/*/////////////////////////////////////////////////////////////Homepage Buttons/////////////////////////////////////////////////////////////*/
+
+.button, .button1 {
+  border-radius: 4px;
+  border: none;
+  color: lightgray;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button{
+background-color: #00a087;	
+}
+
+.button1{
+background-color: #008080;	
+}
+
+.button span, .button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after, .button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span, .button1:hover span {
+  padding-right: 25px;
+  color: white;
+}
+
+.button:hover span:after, .button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*///////////////////////////////////////////////////////////////Footer Menu////////////////////////////////////////////////////////////////*/
+
+a{
+	text-decoration: none;
+	outline: none;
+}
+
+.footer-main{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	background: #272727;
+	padding: 30px 0px;
+}
+
+
+.footer-main {
+    bottom: 0;
+    position: bottom;
+}
+
+.footer-social{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+
+.footer-social ul{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+.footer-social ul li{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 0px 15px;
+	border-radius: 100%;
+	background: #00a087;
+}
+
+.footer-social ul li a{
+	color: #272727;
+	font-size: 25px;
+}
+
+.footer-social ul li a i{
+	line-height: 50px;
+}
+
+.footer-social ul li hover{
+	background:red;
+}
+
+.footer-social ul li hover{
+	color:#fff;
+}
+
+/*Footer Menu 1*/
+
+.footer-menu-one{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	margin-top: 25px;
+}
+
+.footer-menu-one ul{
+	
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	
+}
+
+.footer-menu-one ul li{
+	display: inline-block;
+	margin: 0px 15px;
+}
+
+.footer-menu-one ul li a{
+	font-family: arial;
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+	letter-spacing:1px;
+	text-transform: uppercase;
+}
+
+.footer-menu-one ul li a:hover{
+	color:red;
+}
+
+/*Footer Menu Two*/
+
+.footer-menu-two{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	margin-top: 15px;
+}
+
+.footer-menu-two ul{
+	
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	
+}
+
+.footer-menu-two ul li{
+	display: inline-block;
+	margin: 0px 15px;
+}
+
+.footer-menu-two ul li a{
+	font-family: arial;
+	font-size: 15px;
+	font-weight: 400;
+	color: #fff;
+	letter-spacing:1px;
+	text-transform: uppercase;
+}
+.footer-menu-two ul li a:hover{
+	color:red;
+}
+
+/*Footer Bottom*/
+
+.footer-bottom{
+	width:100%;
+	height: auto;
+	margin: auto;
+	background: #008080;
+	padding: 10x;
+}
+.footer-bottom p{
+	font-family: arial;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	font-weight: 600;
+	letter-spacing:5px;
+}
+.footer-bottom p a{
+	color: #fff;
+}
+
+.footer-bottom p a:hover{
+	color:red;
+}
+
+/*///////////////////////////////////////////////////////////////Homepage images////////////////////////////////////////////////////////////*/
+
+/*TopGrossing Images*/
+
+.TGImages 
+{
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 360px;
+}
+
+.caption 
+{
+    display: block;
+}
+
+/*Poster Images*/
+
+.ps{
+	margin-bottom: 40px;
+}
+
+.ps a{
+	display: inline-block;
+	margin: 0 30px;
+	width: 160px;
+	height: 160px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.ps a img{
+	width: 100%;
+
+}
+
+.ps a:hover > img{
+filter: none;	
+}
+
+/*////////////////////////////////////////////////////////////Homepage Countdown////////////////////////////////////////////////////////////*/
+
+.Countdown{
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+	font-family: monospace;	
+	margin: 0px;
+	padding: 0px;
+}
+
+#CountdownBB{
+	font-weight:bold;
+	font-size:150px;
+	text-align:left;
+	font-family: arial;
+	margin: 0px;
+	padding: 0px;
+}
+
+.IMGRight{
+	float:left;
+	margin-left: 30px;
+	padding: 0px;
+	border-color: white;
+	border-style: solid;
+    border-width: 1px;
+}
+
+.BannerImg{
+	margin-left: 30px;
+	margin-right: 30px;
+	padding: 0px;
+}
+
+.BannerImg img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 73%;
+	border-color: white;
+	border-style: solid;
+    border-width: 1px;
+}
+
+.MovieInfoBelow{
+    text-align: justify;
+    width: 168px;
+	font-size: 10px;
+	margin-left: 30px;
+	margin-top: 0px;
+	padding: 0px;
+	width: 50;
+	height: 250;
+	float:left;
+}
+
+#MovieInfo {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  float: left;
+}
+
+#MovieInfo td, #MovieInfo th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#MovieInfo tr:nth-child(even){background-color: #008080;}
+#MovieInfo tr:nth-child(odd){background-color: #00a087;}
+
+#MovieInfo tr:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+#MovieInfo th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+/*///////////////////////////////////////////////////////////About Page/Our Team////////////////////////////////////////////////////////////*/
+
+
+
+.OTcolumn {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .OTcolumn {
+    width: 100%;
+    display: block;
+  }
+}
+
+.OTcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.OTcontainer {
+  padding: 0 16px;
+}
+
+.OTcontainer::after, .OTrow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.OTtitle {
+  color: white;
+}
+
+.OTbutton {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.OTbutton:hover {
+  background-color: #555;
+}
+
+/*///////////////////////////////////////////////////////////////Recent News////////////////////////////////////////////////////////////////*/
+
+.RecentTrailers{
+	overflow: hidden;
+	background-color: #00a087;
+	padding: 20px;
+	color:white;
+	font-family:arial;
+}
+
+.TrailerTitle{
+	color: white; 
+	font-size:20px;
+	font-weight:bold;
+	text-align: center;
+	
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column{
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*////////////////////////////////////////////////////////////////Contact Us////////////////////////////////////////////////////////////////*/
+
+/*Contact Us Table*/
+
+.div-table {
+  display: table;         
+  width: auto;         
+  background-color: #eee;         
+  border: 1px solid #666666;         
+  border-spacing: 5px;
+}
+.div-table-row {
+  display: table-row;
+  width: auto;
+  clear: both;
+}
+.div-table-col {
+  float: left; 
+  display: table-column;         
+  width: 200px;         
+  background-color: #008080;  
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #272727;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33%;
+}
+
+.tablink:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#FeedbackForm {background-color: #008080;}
+#EmailUs {background-color: #008080;}
+#CallUs {background-color: #008080;}
+
+/*Social Media Icons*/
+
+/*
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+*/
+
+.social-icons {
+  text-align: center;
+  }  
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+.social-icons li a {
+  border-bottom: none;
+  }
+.social-icons li img {
+  width:80px;
+  height:80px;
+  margin-right: 20px;
+}
+/*//////////////////////////////////////////////////////////Movie Reviews Main Page/////////////////////////////////////////////////////////*/
+
+/*review page background*/
+.RPBG {
+	background-color: #00a087;
+	float:left;
+	width: 30%;
+	margin: 20px;
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:10px;
+	padding-right: 10px;
+	color: #fff;
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+}
+
+.RPBG:hover {
+	background-color: #008080;
+	border-style: solid;
+	border-width: 1px;
+}
+.RPBG2 {
+	background-color: #008080;
+	float:left;
+	margin: 20px;
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:10px;
+	padding-right: 10px;
+	color: #fff;
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+}
+
+.RPBG2:hover {
+	background-color: #00a087;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.RPImages {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    border: 3px #f39d1a;  
+	color: white;
+}
+
+.RPImages:hover {
+	color: #7fcfc3;
+}
+
+.RPImages2 {
+    border: 3px #f39d1a;  
+	color: white;
+}
+
+.RPImages2:hover {
+	color: #7fcfc3;
+}
+
+.RPcaption {
+	text-align: center;
+}
+
+
+.RPcaption2 {
+	float:right;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.CPLayout {
+	margin-left: 200px;
+}
+
+
+Resources
+
+/*////////////////////////////////////////////////////////////////Movie News////////////////////////////////////////////////////////////////*/
+/*SlideShow*/
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+
+/*/////////////////////////////////////////////////////////////////////MINI MENU////////////////////////////////////////////////////////////////*/
+/* minimal menu skeleton following BEM guidelines */
+
+/*.mini default class */
+/* sets fonts and zeroes margin and padding */
+.mini {
+	position: absolute;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	border-radius: 4px;
+}
+
+
+/*sets location, z-index, and size of initial button */
+.mini-nav {
+	position: fixed;
+	right: 55px;
+	bottom: 45px;
+	z-index: 100;
+}
+
+
+/* revmoves checkbox */
+.mini-chk {
+	display: none;
+}
+
+
+/* container object for bars (spans) */
+/* sets z-index to:.mini-nav[z-index] + this[z-index] */
+.mini-bars {
+	width: 35px;
+	height: 25px;
+	border: 1px solid white;
+	background-color: #525252;
+	box-shadow: 0px 1px 2px 0px #fff;
+	z-index: 1;
+	cursor: pointer;
+}
+
+/* actual menu, sets location and an intial size */
+/* size is transformed between 0 and 1 */
+.mini-menu {
+	right: -45px;
+	bottom: -35px;
+	width: 200px;
+	opacity: 0;
+	background-color: #808080;
+	box-shadow: 0px 1px 2px 0px #666666;
+	transform: scale(0, 0);
+	transform-origin: right bottom;
+
+	transition: opacity 0.2s ease-in 0s,
+		transform 0.2s ease-in 0.1s;
+}
+
+.mini-chk:checked ~ .mini-menu {
+	transform: scale(1, 1);
+	opacity: 1;
+}
+
+
+/* unordered list, container */
+/* sets margins, width, max-height, vertical-overflow */
+.mini-ul {
+	position: relative;
+	width: 90%;
+	max-height: 200px;
+	margin: 10px auto 38px auto;
+	overflow-y: auto;
+	list-style: none;
+}
+
+
+/* list parts, sets margins and width */
+.mini-li {
+	margin: 10px auto 10px auto;
+	width: 90%;
+	background-color: #636994;
+
+	transition: background-color 0.2s ease-out 0s;
+}
+
+.mini-li:hover {
+	background-color: #3085d7;
+}
+
+
+
+/* list text, sets margin, padding, width, centers text */
+.mini-p {
+	width: 90%;
+	margin: 0px auto 0px auto;
+	padding: 0px 0px 1px 0px;
+	font-weight: lighter;
+	font-size: 15px;
+	text-align: center;
+}
+
+
+
+
+
+/* for styling content from shakespeare.mit.edu/midsummer/midsummer.3.2.html */
+h3, b, p, a {
+	color: #ffffff;
+}
+
+.mini-content > a, .mini-content > blockquote > a {
+	font-size: 0.95rem;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  background-color: #00a087;
+}
+.login {
+  width: 400px;
+  background-color: #00a087;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+  margin: 100px auto;
+}
+.login h1 {
+  text-align: center;
+  color: #00a087;
+  font-size: 24px;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid #00a087;
+}
+.login form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+.login form label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #00a087;
+  color: #00a087;
+}
+.login form input[type="password"], .login form input[type="text"] {
+  width: 310px;
+  height: 50px;
+  border: 1px solid #00a087;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+.login form input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+ margin-top: 20px;
+  background-color: #00a087;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: #00a087;
+}
+.login form input[type="submit"]:hover {
+background-color: #00a087;
+}
+
+.navtop {
+background-color: #00a087;
+height: 60px;
+width: 100%;
+border: 0;
+}
+.navtop div {
+display: flex;
+margin: 0 auto;
+width: 1000px;
+height: 100%;
+}
+.navtop div h1, .navtop div a {
+display: inline-flex;
+align-items: center;
+}
+.navtop div h1 {
+flex: 1;
+font-size: 24px;
+padding: 0;
+margin: 0;
+color: #00a087;
+font-weight: normal;
+}
+.navtop div a {
+padding: 0 20px;
+text-decoration: none;
+color: #00a087;
+font-weight: bold;
+}
+.navtop div a i {
+padding: 2px 8px 0 0;
+}
+.navtop div a:hover {
+color: #00a087;
+}
+body.loggedin {
+background-color: #00a087;
+}
+.content {
+width: 1000px;
+margin: 0 auto;
+}
+.content h2 {
+margin: 0;
+padding: 25px 0;
+font-size: 22px;
+border-bottom: 1px solid #00a087;
+color: #00a087;
+}
+.content > p, .content > div {
+box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+margin: 25px 0;
+padding: 25px;
+background-color: #00a087;
+}
+.content > p table td, .content > div table td {
+padding: 5px;
+}
+.content > p table td:first-child, .content > div table td:first-child {
+font-weight: bold;
+color: #00a087;
+padding-right: 15px;
+}
+.content > div p {
+padding: 5px;
+margin: 0 0 10px 0;
+}
+
+* {
+box-sizing: border-box;
+font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+font-size: 16px;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+body {
+background-color: #00a087;
+margin: 0;
+}
+.register {
+width: 400px;
+background-color: #00a087;
+box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+margin: 100px auto;
+}
+.register h1 {
+text-align: center;
+color: #00a087;
+font-size: 24px;
+padding: 20px 0 20px 0;
+border-bottom: 1px solid #00a087;
+}
+.register form {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding-top: 20px;
+} 
+.register form label {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 50px;
+ height: 50px;
+background-color: #00a087;
+color: #00a087;
+}
+.register form input[type="password"], .register form input[type="text"], .register form input[type="email"] {
+width: 310px;
+height: 50px;
+border: 1px solid #00a087;
+margin-bottom: 20px;
+padding: 0 15px;
+}
+.register form input[type="submit"] {
+width: 100%;
+padding: 15px;
+margin-top: 20px;
+background-color: #00a087;
+ border: 0;
+cursor: pointer;
+font-weight: bold;
+color: #00a087;
+}
+.register form input[type="submit"]:hover {
+background-color: #00a087;
+}
+}

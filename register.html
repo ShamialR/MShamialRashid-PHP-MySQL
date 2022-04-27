@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Cinema Critique </title>
+<!-- FavIcon of the website(the icon in the tab of the browser)-->
+	<link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+	<link rel="manifest" href="Images/site.webmanifest">
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- script used to hide typewriter effect-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- script to load footer and header -->
+	<script>
+        $(function() {
+            $("#header").load("Header.html");
+            $("#footer").load("Footer.html");
+        });
+    </script>
+</head>
+
+<!-- body of the page, loads doDate script when the page is run -->
+<body onload="doDate()">
+
+<!-- loads a seperate page which contains the navbar-->
+    <div id="header"></div>
+	
+<!--Breadcrumb links for how to get to this page through a site map-->
+<div class="breadCrumbBG">
+<ul class="breadcrumb">
+  <li><a href="Homepage.html"><div class="rightarrow"></div>Homepage<div class="rightarrow"></div></a></li>
+  <li>Register</li>
+</ul>
+</div>
+<div class="header">
+	<div class="typewriter">
+		<h1>Cinema Critique.</h1>
+<!-- hide the typewriter effect till h1 is completed-->
+		<h2 id="hide">Register.</h2>
+	</div>
+</div>
+		<div class="darkBG">
+			<h1>Register</h1>
+			<form action="register.php" method="post" autocomplete="off">
+				<label for="username">
+				</label>
+				<input type="text" name="username" placeholder="Username" id="username" required>
+			</br>
+				<label for="password">
+				</label>
+				<input type="password" name="password" placeholder="Password" id="password" required>
+			</br>
+				<label for="email">
+				</label>
+				<input type="email" name="email" placeholder="Email" id="email" required>
+			</br>
+				<input type="submit" value="Register">
+			</form>
+		</div>
+	<div id="footer"></div>
+
+</body>
+<script>
+    window.onload = function() {
+        document.getElementById("hide").style.display = "none";
+    };
+
+    setTimeout(function() {
+        document.getElementById("hide").style.display = "block";
+    }, 7000);
+    function doDate() {
+        var str = "";
+
+        var days = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+        var months = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+
+        var now = new Date();
+
+        str += "Today is: " + days[now.getDay()] + ", " + now.getDate() + " " + months[now.getMonth()] + " " + now.getFullYear() + " " + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+        document.getElementById("todaysDate").innerHTML = str;
+    }
+    setInterval(doDate, 1000);
+</script>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Cinema Critique </title>
+<!-- FavIcon of the website(the icon in the tab of the browser)-->
+	<link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+	<link rel="manifest" href="Images/site.webmanifest">
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- script used to hide typewriter effect-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- script to load footer and header -->
+	<script>
+        $(function() {
+            $("#header").load("Header.html");
+            $("#footer").load("Footer.html");
+        });
+    </script>
+</head>
+
+<!-- body of the page, loads doDate script when the page is run -->
+<body onload="doDate()">
+
+<!-- loads a seperate page which contains the navbar-->
+    <div id="header"></div>
+	
+<!--Breadcrumb links for how to get to this page through a site map-->
+<div class="breadCrumbBG">
+<ul class="breadcrumb">
+  <li><a href="Homepage.html"><div class="rightarrow"></div>Homepage<div class="rightarrow"></div></a></li>
+  <li>Upcoming Movies</li>
+</ul>
+</div>
+	
+    <div class="header">
+        <div class="typewriter">
+            <h1>Cinema Critique.</h1>
+<!-- hide the typewriter effect till h1 is completed-->
+            <h2 id="hide">Upcoming Movies.</h2>
+        </div>
+    </div>
+
+    <div class="lightBG">
+		<div class="Title">Movies Coming Soon</div>
+		<div class="BorderBottom"></div>
+	</div>
+	<a href="https://www.rottentomatoes.com/m/the_kings_man">
+	<div class="darkBG">
+		<div class="IMGRight">
+			<img src="Images/TheKingsMan.jpg" width="150" height="250">
+		</div>
+		<div class="CPLayout">
+			<div class="Title">The King's Man</div>
+			<p>Aaron Taylor-Johnson, Stanley Tucci<br><br>Synopsis:<br>As a collection of history's worst tyrants and criminal masterminds gather to plot a war to wipe out millions, one man must race against time to stop them. Discover the origins of the very first independent intelligence agency in THE KING'S MAN, directed by Matthew Vaughn, coming to theaters February 2020<br>In Theaters Feb 14</p>
+		</div>
+	</div>
+	</a>
+	
+	<a href="https://www.rottentomatoes.com/m/mulan_2020">
+    <div class="lightBG">
+        <div class="IMGRight">
+            <img src="Images/Mulan.jpg" width="150" height="250">
+        </div>
+		
+        <div class="CPLayout">
+
+            <div class="Title">Mulan</div>
+            <p>Yifei Liu, Donnie Yen<br><br>Synopsis:<br>When the Emperor of China issues a decree that one man per family must serve in the Imperial Army to defend the country from Northern invaders, Hua Mulan, the eldest daughter of an honored warrior, steps in to take the place of her ailing father. Masquerading as a man, Hua Jun, she is tested every step of the way and must harness her inner-strength and embrace her true potential. It is an epic journey that will transform her into an honored warrior and earn her the respect of a grateful nation...and a proud father.<br>In Theaters Mar 27</p>
+        </div>
+    </div>
+	</a>
+	
+	<a href="https://www.rottentomatoes.com/m/1917_2019">
+    <div class="darkBG">
+        <div class="IMGRight">
+            <img src="Images/1917.jpg" width="150" height="250">
+        </div>
+        <div class="CPLayout">
+
+            <div class="Title">1917</div>
+            <p>George MacKay, Dean-Charles Chapman<br><br>Critic Consensus:<br>Hard-hitting, immersive, and an impressive technical achievement, 1917 captures the trench warfare of World War I with raw, startling immediacy.<br>R, 1 hr. 50 min.
+In Theaters Jan 10</p>
+        </div>
+    </div>
+	</a>
+	
+	<a href="https://www.rottentomatoes.com/m/no_time_to_die_2020">
+    <div class="lightBG">
+        <div class="IMGRight">
+            <img src="Images/NoTimeToDie.jpg" width="150" height="250">
+        </div>
+        <div class="CPLayout">
+
+            <div class="Title">No Time To Die</div>
+            <p>Daniel Craig, Ana de Armas<br><br>Synopsis:<br>Bond has left active service and is enjoying a tranquil life in Jamaica. His peace is short-lived when his old friend Felix Leiter from the CIA turns up asking for help. The mission to rescue a kidnapped scientist turns out to be far more treacherous than expected, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.<br>In Theaters Apr 10</p>
+        </div>
+    </div>
+	</a>
+
+    <div id="footer"></div>
+
+</body>
+
+<script>
+    window.onload = function() {
+        document.getElementById("hide").style.display = "none";
+    };
+
+    setTimeout(function() {
+        document.getElementById("hide").style.display = "block";
+    }, 7000);
+    function doDate() {
+        var str = "";
+
+        var days = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+        var months = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+
+        var now = new Date();
+
+        str += "Today is: " + days[now.getDay()] + ", " + now.getDate() + " " + months[now.getMonth()] + " " + now.getFullYear() + " " + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+        document.getElementById("todaysDate").innerHTML = str;
+    }
+    setInterval(doDate, 1000);
+</script>
+
+</html>

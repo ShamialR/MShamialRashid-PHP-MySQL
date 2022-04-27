@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Cinema Critique </title>
+<!-- FavIcon of the website(the icon in the tab of the browser)-->
+	<link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+	<link rel="manifest" href="Images/site.webmanifest">
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- script used to hide typewriter effect-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- script to load footer and header -->
+	<script>
+        $(function() {
+            $("#header").load("Header.html");
+            $("#footer").load("Footer.html");
+        });
+    </script>
+</head>
+
+<!-- body of the page, loads doDate script when the page is run -->
+<body onload="doDate()">
+
+<!-- loads a seperate page which contains the navbar-->
+    <div id="header"></div>
+	
+<!--Breadcrumb links for how to get to this page through a site map-->
+<div class="breadCrumbBG">
+<ul class="breadcrumb">
+  <li><a href="Homepage.html"><div class="rightarrow"></div>Homepage<div class="rightarrow"></div></a></li>
+  <li>Recent News</li>
+</ul>
+</div>
+	
+    <div class="header">
+        <div class="typewriter">
+            <h1>Cinema Critique.</h1>
+<!-- hide the typewriter effect till h1 is completed-->
+            <h2 id="hide">Movie News.</h2>
+        </div>
+    </div>
+
+    <div class="lightBG">
+	<a href="https://www.cinemablend.com/news/2486522/eddie-murphy-says-coming-to-america-2-goes-above-and-beyond-fans-expectations" style="color:white;">
+        <div class="Title">Latest Movie News</div>
+
+        <div class="BorderBottom"></div>
+        <h3>Eddie Murphy Says Coming To America 2 Goes  Above And Beyond  Fans  Expectations</h3
+        <br>
+
+        <p><img src="Images/EddieMurphyNews.jpg" alt="EddieMurphyNews" style="float: right;width:400px;height:400;margin-left:15px;border-style:solid;border-width:2px;">When Eddie Murphy comes back, he does it all the way! This year, the comedian has already returned in a big way by starring in potential Oscar contender Dolemite Is My Name, but there s a lot more coming from him that calls back to his 80s roots. Next weekend, Murphy will be bringing back a few of his iconic Saturday Night Live characters when he hosts the show for the first time in 35 years. There s also a fourth Beverly Hills Cop movie in the works. Oh, and he just finished filming a Coming To America sequel. It s an overwhelmingly awesome amount of Eddie Murphy we ll be getting into our lives in the near future. Coming 2 America is likely to be the most exciting for fans since its his just about his best movie ever (at least according to the readers we polled). Well, the actor recently talked about the sequel, and he s confident fans won t be disappointed. In his words: A lot of people have this expectation, like people would say to me when they found out I was doing it, Don t fuck that movie up. So we ve gone above and beyond what anybody would think. <br><br>I m really, really happy with it. Coming 2 America has a lot of good things going for it. For one, the long-awaited sequel will be directed by Dolemite Is My Names Craig Brewer. The Netflix movie just scored two Golden Globe nominations, one for Best Picture and Best Actor for Eddie Murphy in the Comedy or Musical category, and could be on its way to more throughout Oscar season. Black-ish creator Kenya Barris co-wrote the Coming 2 America script, and let s not forget that James Earl Jones and Arsenio Hall, among others, are returning to their roles! <br><br>The 2020 comedy will also have Tracy Morgan and Wesley Snipes joining the cast. Plus, Eddie Murphy is returning to the makeup chair to continue playing his other various characters from the original besides Prince Akeem. When the actor recently appeared on Ellen, he talked about how Coming to America is still his most popular movie to date so he felt some pressure to make the follow up good. Eddie Murphy said he (couldn t be happier) with how Coming 2 America turned out! Fans will have waited over 30 years since the original when the sequel finally comes out, so it s nice to know Murphy is proud of it. However, the movie will apparently be PG-13, which contrasts his recent work on Dolemite Is My Name. <br>Can you believe the Netflix comedy was his first R-rated comedy in 20 years? Coming 2 America is set to be released in theaters on December 18, 2020. Stay tuned here on CinemaBlend for more news on Eddie Murphy s comeback and check out the release calendar for the new year!</p>
+    </a>
+	</div>
+    <div class="darkBG">
+        <h3><div class="Title">Recent Movie Trailers</div></h3>
+        <div class="BorderBottom"></div>
+        <br>
+<!-- slideshow which uses div class below prev calls the method plusSlides(-1) & plusSlides(1) for next, both of which use a function inside a loop to go to different slides -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <iframe style="float:center;" width="1000" height="600" src="https://www.youtube.com/embed/X2m-08cOAbc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>
+                    <div class="TrailerTitle">
+                        <br>Free Guy</div>
+                    <br>In the open world video game Free City, an amalgamation of Grand Theft Auto and Fortnite, Guy (Reynolds) is a non-player character (NPC) working as a bank teller. Thanks to a code developed by programmers Milly (Comer) and Keys (Keery) inserted into Free City by the publisher Antoine (Waititi), Guy becomes aware of his world being a video game, and takes steps to make himself the hero, creating a race against time to save the game before the developers can shut it down.</p>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <iframe style="float:center;" width="1000" height="600" src="https://www.youtube.com/embed/sfM7_JLk-84" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>
+                    <div class="TrailerTitle">
+                        <br>Wonder Woman 1984</div>
+                    <br>In 1984, Diana Prince comes into conflict with two formidable foes: Maxwell Lord and the Cheetah, while reuniting with her past love Steve Trevor.</p>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <iframe style="float:center;" width="1000" height="600" src="https://www.youtube.com/embed/8Qn_spdM5Zg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>
+                    <div class="TrailerTitle">
+                        <br>Star Wars: The Rise of Skywalker</div>
+                    <br>The Rise of Skywalker follows Rey, Finn, and Poe Dameron as they lead the Resistance's final stand against Kylo Ren and the First Order, who are now aided by the return of the deceased galactic emperor, Palpatine.</p>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+    </div>
+
+    <div class="lightBG">
+        <h2><div class="Title">Top Grossing Films</div></h2>
+        <div class="BorderBottom"></div>
+        <br>
+        <div class="row">
+            <div class="column">
+                <p>
+                    <div class="TrailerTitle">Avengers Endgame<br><img src="Images/Avengers-Endgame.jpg" width="360" height="540" style="border-style:solid;border-width:2px;"></div>
+                    <br>Where does one begin? When it comes to Avengers: Endgame, that question is not so much an expression of wanton enthusiasm as a practical challenge in evaluating the destination toward which Kevin Feige and company have been steering story and viewer alike for the past 11 years and 21 films. Though there have been plenty of three-hour-plus movies and even a few 20+ entry movie franchises, there’s really nothing to compare with what Disney and Marvel Studios have pulled off, either in terms of size, quality and consistency of cast (a moment of silence for Edward Norton and Terrence Howard), or in how narrow the chronological window, all things considered, those movies were produced. Though we’ve praised it often, casting remains the cornerstone of the MCU. Whether by pitch-perfect distillations of decades-old comic book characters (Captain American, Thor, Spider-Man) or charisma-fueled reinventions of same (Iron Man, Ant-Man, Star-Lord), the MCU’s batting average in terms of casting is not only practically obscene.<span id="dots">...</span><span id="more"> It’s a crucial ingredient in ensuring the thematic and emotional payoff (and box office payday) of Endgame. Moviegoers have been living with these actors, as these characters, for over a decade. For many, this version of these characters is the only one they know. This is why the sudden ashification of so many heroes at the end of Infinity War hit even the most cynical comic book veterans right in the feels and left less hardened viewers confused and distraught. It’s also why, as Avengers: Endgame opens (after another swift kick to the stomach just in case we’ve forgotten the toll of that snap), the audience cares about not just what the surviving heroes are going to do, but how they are doing in general. It gives the film an emotional resonance that’s unusual not only in pulpier genre offerings but in films in general. This connection makes the quiet moments as valuable to the viewer as the spectacle, and for all the fireworks in the third act, Avengers: Endgame is very much a film of quiet moments and small yet potent emotional payoffs. Comic book fans know the thrill of following all your favorite characters through a multi-issue storyline that culminates in a “universe at stake” ending. Now, thanks to 21 movies in 11 years and one massive, satisfying three-hour finale, moviegoers do, too. —Michael Burgin</span></p>
+					<button onclick="myFunction()" id="myBtn">Read more</button>
+			</div>
+            <div class="column">
+                <p>
+                    <div class="TrailerTitle">Avatar<br><img src="Images/Avatar.jpg" width="360" height="540" style="border-style:solid;border-width:2px;"></div>
+                    <br>It makes sense that Avatar is the second highest grossing movie ever made: Irony and insincerity have no place in its extended universe. Whether or not James Cameron intended to crib the world of Pandora and its futuristic inhabitants from practically every fantastical ur-text ever conceived, it hardly matters, because Avatar is modern mythmaking at its most foundational. Cameron still seems to believe that “the movies” can give audiences a transformative experience, so every sinew of his film bears the Herculean effort of truly genius worldbuilding, telling the simple story of Jake Sully (Sam Worthington) and his Dances with Wolves-like saving of the Na’vi, natives to the planet of Pandora, from the destructive forces of colonialism. Cameron wants us to care about this world as much as Jake Sully, and by extension James Cameron, does, crafting flora and fauna with borderline sociopathic obsessiveness. But Cameron’s proven us wrong countless times before. —Dom Sinacola</p>
+            </div>
+            <div class="column">
+                <p>
+                    <div class="TrailerTitle">Titanic<br><img src="Images/Titanic2.jpg" width="360" height="540" style="border-style:solid;border-width:2px;"></div>
+                    <br>Almost 20 years after its theatrical debut, James Cameron’s blockbuster epic is still so ubiquitous in the pop culture zeitgeist, its filmmaking marvels are drowned out by young Kate-and-Leo nostalgia and that damned Celine Dion caterwaul (not to mention the now late James Horner’s iconic score). Cameron’s ear for dialogue may be woefully leaden, but he’s a shrewd storyteller, plunking a Romeo-and-Juliet redux aboard the doomed ocean liner and flanking the fictional romance with historical details, groundbreaking special effects and jaw-dropping visuals. The narrative lapses are at times dumbfounding-let’s face it, old Rose, who tosses a priceless artifact into the abyss after waxing ad nauseam about herself, is a thoughtless jerk—and the aforementioned dialogue is awful (to say nothing of Billy Zane doing his best mustache-twirling silent movie villain) but Titanic remains a painstaking testament to the all-in Hollywood spectacle.—Amanda Schurr</p>
+            </div>
+        </div>
+		<script>
+		function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+    </div>
+
+    <div id="footer"></div>
+
+</body>
+
+<script>
+    window.onload = function() {
+        document.getElementById("hide").style.display = "none";
+    };
+
+    setTimeout(function() {
+        document.getElementById("hide").style.display = "block";
+    }, 7000);
+    function doDate() {
+        var str = "";
+
+        var days = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+        var months = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+
+        var now = new Date();
+
+        str += "Today is: " + days[now.getDay()] + ", " + now.getDate() + " " + months[now.getMonth()] + " " + now.getFullYear() + " " + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+        document.getElementById("todaysDate").innerHTML = str;
+    }
+    setInterval(doDate, 1000);
+</script>
+
+</html>

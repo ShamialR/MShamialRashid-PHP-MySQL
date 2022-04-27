@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Cinema Critique </title>
+<!-- FavIcon of the website(the icon in the tab of the browser)-->
+	<link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+	<link rel="manifest" href="Images/site.webmanifest">
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- script used to hide typewriter effect-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- script to load footer and header -->
+	<script>
+        $(function() {
+            $("#header").load("Header.html");
+            $("#footer").load("Footer.html");
+        });
+    </script>
+</head>
+
+<!-- body of the page, loads doDate script when the page is run -->
+<body onload="doDate()">
+
+<!-- loads a seperate page which contains the navbar-->
+    <div id="header"></div>
+	
+<!--Breadcrumb links for how to get to this page through a site map-->
+<div class="breadCrumbBG">
+<ul class="breadcrumb">
+  <li><a href="Homepage.html"><div class="rightarrow"></div>Homepage<div class="rightarrow"></div></a></li>
+  <li>ContactUs</li>
+</ul>
+</div>
+	
+    <div class="header">
+        <div class="typewriter">
+            <h1>Cinema Critique.</h1>
+<!-- hide the typewriter effect till h1 is completed-->
+            <h2 id="hide">Contact Us.</h2>
+        </div>
+    </div>
+
+<div class="BorderTop"></div>
+<button class="tablink" onclick="openPage('FeedbackForm', this, 'black')">Feedback Form</button>
+<button class="tablink" onclick="openPage('EmailUs', this, 'black')" id="defaultOpen">Email Us</button>
+<button class="tablink" onclick="openPage('CallUs', this, 'black')">Call Us</button>
+<div id="FeedbackForm" class="tabcontent">
+  <h3>Feedback Form</h3>
+          <div class="BorderBottom"></div>
+  <p>        <form id="form1">
+            <div class="div-table">
+                <div class="div-table-row">
+                    <div class="div-table-col">Full Name: </div>
+                    <div class="div-table-col">
+                        <input id="name" value="">
+                    </div>
+                </div>
+                <div class="div-table-row">
+                    <div class="div-table-col">Address: </div>
+                    <div class="div-table-col">
+                        <input id="House" value="">
+                    </div>
+                </div>
+                <div class="div-table-row">
+                    <div class="div-table-col">City: </div>
+                    <div class="div-table-col">
+                        <input id="City" value="">
+                    </div>
+                </div>
+                <div class="div-table-row">
+                    <div class="div-table-col">Postcode: </div>
+                    <div class="div-table-col">
+                        <input id="Postcode" value="">
+                    </div>
+                </div>
+
+            </div>
+        </form>
+        <input type="button" onclick="processForm();" value="Validate"></p>
+</div>
+
+<div id="EmailUs" class="tabcontent">
+  <h3>Email Us</h3>
+          <div class="BorderBottom"></div>
+  <p>Email Us Your Feedback At: <a href="mailto:Shamial_r@hotmail.com?Subject=Cinema%20Critique" target="_top">Shamial_r@hotmail.com</a><br><br>Email Us Your Suggestions At: <a href="mailto:Shamial_r@hotmail.com?Subject=Cinema%20Critique" target="_top">Shamial_r@hotmail.com</a></p>
+</div>
+
+<div id="CallUs" class="tabcontent">
+  <h3>Call Us</h3>
+          <div class="BorderBottom"></div>
+  <p>Call Us At: 01 23456 78910</p>
+</div>
+
+
+    <div class="lightBG">
+        <div class="Title">Find Us At</div>
+        <br>
+        <div class="BorderBottom"></div>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2476.7444147761325!2d-0.7554701842256006!3d51.627890879655126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487661d9f7ff931f%3A0xdd02f1fde0f27ca0!2sBuckinghamshire%20New%20University!5e0!3m2!1sen!2suk!4v1576526308952!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0;float:left;" allowfullscreen=""></iframe>
+        <p style="margin:10px;padding-left:600px;">
+            <br>
+            <br>
+            <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div class="darkBG">
+	<br><br>
+        <div class="Title">Check Out Our Social Media Page Links!</div>
+        <br>
+        <div class="BorderBottom"></div>
+        <br>
+        <ul class="social-icons">
+			<li><a href="http://www.facebook.com"><img src='Images/Facebook_3.png' /></a></li>
+			<li><a href="http://www.twitter.com"><img src='Images/Github_3.png' /></a></li>
+			<li><a href="http://www.youtube.com"><img src='Images/Google+_3.png' /></a></li>
+			<li><a href="http://www.instagram.com"><img src='Images/Instagram_3.png' /></a></li>
+			<li><a href="http://www.linkedin.com"><img src='Images/Linkedin_3.png' /></a></li>
+			<li><a href="http://www.pinterest.com"><img src='Images/Pinterest_3.png' /></a></li>
+			<li><a href="http://www.reddit.com"><img src='Images/Reddit_3.png' /></a></li>
+			<li><a href="http://www.snapchat.com"><img src='Images/Snapchat_3.png' /></a></li>
+		</ul>
+    </div>
+
+    <div id="footer"></div>
+
+</body>
+<script>
+    window.onload = function() {
+        document.getElementById("hide").style.display = "none";
+    };
+
+    setTimeout(function() {
+        document.getElementById("hide").style.display = "block";
+    }, 7000);
+    function doDate() {
+        var str = "";
+
+        var days = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+        var months = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+
+        var now = new Date();
+
+        str += "Today is: " + days[now.getDay()] + ", " + now.getDate() + " " + months[now.getMonth()] + " " + now.getFullYear() + " " + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+        document.getElementById("todaysDate").innerHTML = str;
+    }
+    setInterval(doDate, 1000);
+
+	/*call the functions to run*/
+    function processForm() {
+        validateName();
+        validateHouse();
+        validateCity();
+        validatePostcode();
+    }
+
+    function validateName() {
+        var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
+        var name = document.getElementById('name').value;
+        if (!regName.test(name)) {
+            alert('Please enter your full name (first & last name).');
+            document.getElementById('name').focus();
+            return false;
+        } else {
+            alert('Valid name given.');
+            return true;
+        }
+    }
+
+    function validateHouse() {
+        var regHouse = /^[0-9]+ [a-zA-Z]+$/;
+        var House = document.getElementById('House').value;
+        if (!regHouse.test(House)) {
+            alert('Please enter your House Number and Street (House Number & Address).');
+            document.getElementById('House').focus();
+            return false;
+        } else {
+            alert('Valid Address given.');
+            return true;
+        }
+    }
+
+    function validateCity() {
+        var regCity = /^[a-zA-z] ?([a-zA-z]|[a-zA-z] )*[a-zA-z]$/;
+        var City = document.getElementById('City').value;
+        if (!regCity.test(City)) {
+            alert('Please enter your City.');
+            document.getElementById('City').focus();
+            return false;
+        } else {
+            alert('Valid City given.');
+            return true;
+        }
+    }
+
+    function validatePostcode() {
+        var regPostCode = /^([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9]?[A-Za-z])))) [0-9][A-Za-z]{2})$/;
+        var name = document.getElementById('Postcode').value;
+        if (!regPostCode.test(name)) {
+            alert('Please enter your PostCode (XX55 5XX).');
+            document.getElementById('Postcode').focus();
+            return false;
+        } else {
+            alert('Valid Postcode given.');
+            return true;
+        }
+    }
+	
+// Feedback and contact Us Tabs
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</html>
